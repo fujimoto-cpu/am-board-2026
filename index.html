@@ -13,26 +13,15 @@
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
-  body{
-    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",sans-serif;
-    color:var(--ink); background:var(--paper); line-height:1.7;
-    -webkit-font-smoothing:antialiased;
-  }
+  body{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",sans-serif; color:var(--ink); background:var(--paper); line-height:1.7; -webkit-font-smoothing:antialiased;}
   .serif{font-family:Georgia,"Times New Roman",serif;}
   .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
 
-  /* HERO */
-  header.hero{
-    text-align:center; padding:72px 24px 48px; border-bottom:1px solid var(--line);
-    background:linear-gradient(180deg,#fffdfa 0%, var(--paper) 100%);
-  }
+  header.hero{text-align:center; padding:72px 24px 48px; border-bottom:1px solid var(--line); background:linear-gradient(180deg,#fffdfa 0%, var(--paper) 100%);}
   .hero .eyebrow{letter-spacing:.34em; font-size:12px; color:var(--sub); text-transform:uppercase;}
-  .hero h1{
-    font-family:Georgia,serif; font-weight:500; font-size:clamp(38px,7vw,72px);
-    letter-spacing:.04em; margin:14px 0 6px; line-height:1.05;
-  }
+  .hero h1{font-family:Georgia,serif; font-weight:500; font-size:clamp(38px,7vw,72px); letter-spacing:.04em; margin:14px 0 6px; line-height:1.05;}
   .hero h1 .dot{color:var(--kr);}
-  .hero .season{font-family:Georgia,serif; font-size:clamp(20px,3vw,30px); letter-spacing:.5em; color:var(--ink); margin-bottom:18px; padding-left:.5em;}
+  .hero .season{font-family:Georgia,serif; font-size:clamp(20px,3vw,30px); letter-spacing:.5em; margin-bottom:18px; padding-left:.5em;}
   .hero p.lead{max-width:660px; margin:0 auto; color:#4a463e; font-size:15px;}
   .hero .stats{display:flex; gap:36px; justify-content:center; margin-top:30px; flex-wrap:wrap;}
   .hero .stats div{text-align:center;}
@@ -43,7 +32,6 @@
   .sec-title{font-family:Georgia,serif; font-size:13px; letter-spacing:.3em; text-transform:uppercase; color:var(--sub); margin-bottom:8px;}
   .sec-h{font-size:24px; font-weight:700; margin-bottom:26px; letter-spacing:.02em;}
 
-  /* 4 CONDITIONS */
   .cond-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
   .cond{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 20px; position:relative;}
   .cond .ico{font-size:26px; display:block; margin-bottom:10px;}
@@ -51,9 +39,8 @@
   .cond h3{font-size:16px; margin-bottom:6px;}
   .cond p{font-size:12.5px; color:var(--sub); line-height:1.55;}
 
-  /* MATRIX */
   .matrix-note{font-size:13px; color:var(--sub); margin-bottom:18px;}
-  .matrix{width:100%; border-collapse:separate; border-spacing:8px; }
+  .matrix{width:100%; border-collapse:separate; border-spacing:8px;}
   .matrix th{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--sub); font-weight:600; padding:6px; text-align:center;}
   .matrix th.rowh{text-align:left; width:120px; white-space:nowrap;}
   .matrix td{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 12px; text-align:center; vertical-align:middle;}
@@ -63,15 +50,15 @@
   .matrix td.kr{border-top:3px solid var(--kr);}
   .matrix td.eu{border-top:3px solid var(--eu);}
   .matrix .rowh .ci{font-size:18px; margin-right:6px;}
+  .addbrands{margin-top:16px; background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:14px 18px; font-size:13px; color:#45413a;}
+  .addbrands b{color:var(--ink);}
 
-  /* REGION NAV */
   .nav{position:sticky; top:0; z-index:40; background:rgba(246,244,240,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:12px 0;}
   .nav .wrap{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
   .nav a{font-size:12.5px; text-decoration:none; color:var(--ink); border:1px solid var(--line); padding:6px 13px; border-radius:999px; background:#fff; transition:.15s;}
   .nav a:hover{background:var(--ink); color:#fff;}
   .nav .lab{font-size:11px; letter-spacing:.2em; color:var(--sub); text-transform:uppercase; margin-right:6px;}
 
-  /* BRAND */
   .brand{padding:46px 0; border-bottom:1px solid var(--line);}
   .brand-head{display:flex; justify-content:space-between; align-items:flex-start; gap:20px; flex-wrap:wrap; padding-left:18px; position:relative;}
   .brand::before{content:""; position:absolute; left:0; margin-top:6px; width:5px; height:46px; border-radius:3px;}
@@ -88,11 +75,7 @@
   .concept{font-size:14px; color:#45413a; margin:14px 0 4px; padding-left:18px; max-width:760px;}
   .shots{display:flex; gap:12px; flex-wrap:wrap; padding:16px 0 4px 18px;}
   figure.shot{margin:0; cursor:zoom-in;}
-  figure.shot img{
-    height:clamp(220px,27vw,370px); width:auto; display:block; border-radius:8px;
-    background:#eceae5 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><text x="50%" y="54%" font-size="9" fill="%23999" text-anchor="middle">…</text></svg>') center no-repeat;
-    box-shadow:0 2px 10px rgba(0,0,0,.07); transition:transform .2s, box-shadow .2s;
-  }
+  figure.shot img{height:clamp(220px,27vw,360px); width:auto; display:block; border-radius:8px; background:#eceae5; box-shadow:0 2px 10px rgba(0,0,0,.07); transition:transform .2s, box-shadow .2s;}
   figure.shot:hover img{transform:translateY(-3px); box-shadow:0 8px 22px rgba(0,0,0,.13);}
   figure.shot figcaption{font-size:11px; color:var(--sub); margin-top:6px; letter-spacing:.02em;}
   .point{margin:12px 0 0 18px; background:var(--card); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:0 10px 10px 0; padding:12px 16px; font-size:13.5px; color:#3c382f; max-width:820px;}
@@ -101,7 +84,6 @@
   .brand[data-r="kr"] .point{border-left-color:var(--kr);}
   .brand[data-r="eu"] .point{border-left-color:var(--eu);}
   .official{font-size:11.5px; color:var(--sub); margin:8px 0 0 18px;}
-  .official a{color:var(--sub);}
 
   .region-divider{padding:38px 0 6px; text-align:center;}
   .region-divider .rl{font-family:Georgia,serif; font-size:13px; letter-spacing:.34em; text-transform:uppercase; color:var(--sub);}
@@ -113,7 +95,6 @@
   footer{padding:48px 24px 70px; text-align:center; color:var(--sub); font-size:12px; line-height:1.8;}
   footer .src{max-width:760px; margin:0 auto;}
 
-  /* LIGHTBOX */
   #lb{position:fixed; inset:0; background:rgba(20,18,15,.94); display:none; align-items:center; justify-content:center; z-index:100; flex-direction:column; padding:24px; cursor:zoom-out;}
   #lb.on{display:flex;}
   #lb img{max-width:92vw; max-height:84vh; border-radius:6px; box-shadow:0 10px 50px rgba(0,0,0,.5);}
@@ -136,20 +117,19 @@
 </head>
 <body>
 
-<header class="hero">
+<header class="hero" id="top">
   <div class="eyebrow">Image Board — Reference Brands</div>
   <h1 class="serif">ARMILLARY<span class="dot">.</span></h1>
   <div class="season serif">26AW</div>
   <p class="lead">川田くん 5/13 打ち合わせ起点 —「ヒロさん 24AW 頃の<b>綺麗め路線</b> × <b>韓国系トレンド融合</b>」。グラフィック頼みではなく<b>「形・素材・切り返し・カラーリング」</b>で勝負するための参考ブランド集。</p>
   <div class="stats">
-    <div><div class="n serif">14</div><div class="l">Brands</div></div>
-    <div><div class="n serif">68</div><div class="l">References</div></div>
+    <div><div class="n serif">17</div><div class="l">Brands</div></div>
+    <div><div class="n serif">140</div><div class="l">References</div></div>
     <div><div class="n serif">4</div><div class="l">Conditions</div></div>
     <div><div class="n serif">3</div><div class="l">Regions</div></div>
   </div>
 </header>
 
-<!-- 4 CONDITIONS -->
 <section class="block wrap">
   <div class="sec-title">The Criteria</div>
   <div class="sec-h">ゆりこの 4 条件</div>
@@ -161,7 +141,6 @@
   </div>
 </section>
 
-<!-- MATRIX -->
 <section class="block wrap">
   <div class="sec-title">Build Guide</div>
   <div class="sec-h">イメージボード組み立て指針（CORIN提案）</div>
@@ -195,14 +174,14 @@
       </tr>
     </tbody>
   </table>
+  <div class="addbrands">＋ ユニセックス強化の追加3ブランド：<b>beautiful people</b>🇯🇵（変形ギミック）／<b>POST ARCHIVE FACTION</b>🇰🇷（モジュラー切り返し）／<b>Wales Bonner</b>🇬🇧（上品な色×素材）。下のギャラリー各地域の最後に掲載。</div>
 </section>
 
-<!-- NAV -->
 <nav class="nav"><div class="wrap">
   <span class="lab">Jump</span>
-  <a href="#jp">🇯🇵 日本 5</a>
-  <a href="#kr">🇰🇷 韓国 5</a>
-  <a href="#eu">🌍 欧州/Global 4</a>
+  <a href="#jp">🇯🇵 日本 6</a>
+  <a href="#kr">🇰🇷 韓国 6</a>
+  <a href="#eu">🌍 欧州/Global 5</a>
   <a href="#top" style="margin-left:auto">↑ Top</a>
 </div></nav>
 
@@ -210,8 +189,8 @@
 
 <footer>
   <div class="src">
-    <b>Armillary. 26AW イメージボード</b>（社内検討用・v1）<br>
-    作成 2026-05-31 ／ 全68点。各ブランド公式サイト・公式IG・FASHIONSNAP / Hypebeast / WWD 等メディアより参考目的で取得。<br>
+    <b>Armillary. 26AW イメージボード</b>（社内検討用・v2 / 17ブランド・140点）<br>
+    作成 2026-05-31 ／ 全画像は各ブランド公式サイト・公式IG・FASHIONSNAP / Hypebeast / WWD 等メディアより参考目的で取得。<br>
     商用利用・外部配布不可。最終的なデザイン方向の摺り合わせ素材として使用。
   </div>
 </footer>
@@ -223,91 +202,109 @@ const C = { 1:{i:"✂️",t:"切り返し"}, 2:{i:"🎨",t:"色使い"}, 3:{i:"�
 
 const BRANDS = [
   // ---- JAPAN ----
-  {r:"jp", region:"jp", name:"CULLNI", kana:"クルニ", flag:"🇯🇵", meta:"日本 / 2014 / 安藤一彦",
+  {region:"jp", name:"CULLNI", kana:"クルニ", flag:"🇯🇵", meta:"日本 / 2014 / 安藤一彦", season:"25AW",
    concept:"Have a wonderful day — ドレス×カジュアル・ジェンダーレス×エージレス",
    match:[1,3,4], official:"cullni.com / @cullni",
    point:"<b>パネル切替×バイカラー。</b>「目立たせすぎず、でも気になる」アシメ処理が、Armillary. の綺麗め路線の理想形。",
-   imgs:[["cullni_01.jpg","25AW Look 1"],["cullni_02.jpg","25AW Look 2"],["cullni_03.jpg","25AW Look 3"],["cullni_04.jpg","25AW Look 4"],["cullni_05.jpg","25AW Look 5"]]},
+   imgs:["cullni_01.jpg","cullni_02.jpg","cullni_03.jpg","cullni_04.jpg","cullni_05.jpg","cullni_06.jpg","cullni_07.jpg","cullni_08.jpg","cullni_09.jpg"]},
 
-  {r:"jp", region:"jp", name:"MAISON SPECIAL", kana:"メゾンスペシャル", flag:"🇯🇵", meta:"日本 / 2019 / Sotheby's League",
+  {region:"jp", name:"MAISON SPECIAL", kana:"メゾンスペシャル", flag:"🇯🇵", meta:"日本 / 2019 / Sotheby's League", season:"25AW",
    concept:"HIGH FASHION × HIGH FACTORY — モード×日本製造・ジェンダーレス",
    match:[1,2], official:"maisonspecial.co.jp / @maisonspecial_men",
    point:"<b>ジャカード×鮮やかカラーの色勝負。</b>裏地・異素材で「さりげなく面白い」を作る手法が参考になる。",
-   imgs:[["maison_01.jpg","25AW Look 1"],["maison_02.jpg","25AW Look 2"],["maison_03.jpg","25AW Look 3"],["maison_04.jpg","25AW Look 4"],["maison_05.jpg","25AW Look 5"]]},
+   imgs:["maison_01.jpg","maison_02.jpg","maison_03.jpg","maison_04.jpg","maison_05.jpg","maison_06.jpg","maison_07.jpg","maison_08.jpg","maison_09.jpg"]},
 
-  {r:"jp", region:"jp", name:"kotohayokozawa", kana:"コトハヨコザワ", flag:"🇯🇵", meta:"日本 / 2015 / 横澤琴葉",
-   concept:"IN THIS TEMPORARY CITY（26AW）— プリーツ×ビビッドなポップアートカラー",
+  {region:"jp", name:"kotohayokozawa", kana:"コトハヨコザワ", flag:"🇯🇵", meta:"日本 / 2015 / 横澤琴葉", season:"26AW",
+   concept:"IN THIS TEMPORARY CITY — プリーツ×ビビッドなポップアートカラー",
    match:[2,3], official:"kotohayokozawa.com",
    point:"<b>ビビッド色×プリーツの形遊び。</b>「着方に決まりがない＝気になるユニセックス」という設計思想がArmillary.と重なる。",
-   imgs:[["kotoha_01.webp","26AW Runway 1"],["kotoha_02.webp","26AW Runway 2"],["kotoha_03.webp","26AW Runway 3"],["kotoha_04.webp","26AW Runway 4"],["kotoha_05.webp","26AW Runway 5"]]},
+   imgs:["kotoha_01.webp","kotoha_02.webp","kotoha_03.webp","kotoha_04.webp","kotoha_05.webp","kotoha_07.jpg","kotoha_08.jpg"]},
 
-  {r:"jp", region:"jp", name:"SOSHIOTSUKI", kana:"ソウシオオツキ", flag:"🇯🇵", meta:"日本 / 2015 / 大月壮士（LVMH Prize 2025）",
-   concept:"IN FLORENCE（26AW）— 日本の精神性×テーラリング・バイアス意匠",
+  {region:"jp", name:"SOSHIOTSUKI", kana:"ソウシオオツキ", flag:"🇯🇵", meta:"日本 / 2015 / 大月壮士（LVMH Prize 2025）", season:"26AW",
+   concept:"IN FLORENCE — 日本の精神性×テーラリング・バイアス意匠",
    match:[1,3], official:"soshiotsuki.store / @soshiotsuki",
    point:"<b>バイアス使い・見返しを意匠として昇華。</b>テーラリングを崩しすぎずに遊ぶ塩梅が綺麗め路線に効く。",
-   imgs:[["soshiotsuki_01.jpg","26AW Look 1"],["soshiotsuki_02.jpg","26AW Look 2"],["soshiotsuki_03.jpg","26AW Look 3"],["soshiotsuki_05.jpg","26AW Look 5"]]},
+   imgs:["soshiotsuki_01.jpg","soshiotsuki_02.jpg","soshiotsuki_03.jpg","soshiotsuki_05.jpg","soshiotsuki_07.jpg","soshiotsuki_08.jpg","soshiotsuki_09.jpg"]},
 
-  {r:"jp", region:"jp", name:"TOGA", kana:"トーガ", flag:"🇯🇵", meta:"日本 / 1997 / 古田泰子",
-   concept:"PULL, CRUMPLE, PRESSED（26AW）— 異素材デコンストラクション",
+  {region:"jp", name:"TOGA", kana:"トーガ", flag:"🇯🇵", meta:"日本 / 1997 / 古田泰子", season:"26AW",
+   concept:"PULL, CRUMPLE, PRESSED — 異素材デコンストラクション",
    match:[1,3,4], official:"toga.jp / @toga_archives",
    point:"<b>「普通の形を1か所だけ壊す」手法</b>（付け襟・カットアウト等）。過度なグラフィックに頼らず形で見せる。",
-   imgs:[["toga_01.jpg","26AW Look 1"],["toga_02.jpg","26AW Look 2"],["toga_03.jpg","26AW Look 3"],["toga_04.jpg","26AW Look 4"],["toga_05.jpg","26AW Look 5"]]},
+   imgs:["toga_01.jpg","toga_02.jpg","toga_03.jpg","toga_04.jpg","toga_05.jpg","toga_06.jpg","toga_07.jpg","toga_08.jpg","toga_09.jpg"]},
+
+  {region:"jp", name:"beautiful people", kana:"ビューティフルピープル", flag:"🇯🇵", meta:"日本 / 2007 / 熊切秀典", season:"26SS",
+   concept:"「人が服を美しくする」— 5サイズ展開のジェンダーレスデザイン",
+   match:[1,3,4], official:"beautiful-people.jp / @beautifulpeople_tokyo",
+   point:"<b>リバーシブル・2way等の「1着2役ギミック」＋切り返し部の素材コントラスト。</b>少量生産でも着用価値を高める構造のヒント。",
+   imgs:["bp_01.jpg","bp_02.jpg","bp_03.jpg","bp_04.jpg","bp_05.jpg","bp_06.jpg","bp_07.jpg","bp_08.jpg"]},
 
   // ---- KOREA ----
-  {r:"kr", region:"kr", name:"ADER ERROR", kana:"アダーエラー", flag:"🇰🇷", meta:"韓国 / 2014 / ADER collective",
+  {region:"kr", name:"ADER ERROR", kana:"アダーエラー", flag:"🇰🇷", meta:"韓国 / 2014 / ADER collective", season:"25FW",
    concept:"ポストミニマル×ポストヒューマン — 日常の歪みとユーモア",
    match:[1,3,4], official:"adererror.com / @adererror",
    point:"<b>ボリューム×フラットの対比切替。</b>ステッチを切替の意匠として使う発想がそのまま応用できる。",
-   imgs:[["ader_01.jpg","25FW Look 1"],["ader_02.jpg","25FW Look 2"],["ader_03.jpg","25FW Look 3"],["ader_04.jpg","25FW Look 4"],["ader_05.jpg","25FW 公式キーリック"]]},
+   imgs:["ader_01.jpg","ader_02.jpg","ader_03.jpg","ader_04.jpg","ader_05.jpg","ader_06.jpg","ader_07.jpg","ader_08.jpg"]},
 
-  {r:"kr", region:"kr", name:"ANDERSSON BELL", kana:"アンダーソンベル", flag:"🇰🇷", meta:"韓国 / 2014 / Kim Do-hoon",
+  {region:"kr", name:"ANDERSSON BELL", kana:"アンダーソンベル", flag:"🇰🇷", meta:"韓国 / 2014 / Kim Do-hoon", season:"SS26",
    concept:"スカンジナビアデザインを韓国的解釈で再構築",
    match:[1,2,3,4], official:"adsb.co.kr / @anderssonbell",
    point:"<b>異素材を一着の中でぶつける切替＋ロスコ的な意外な色の並置。</b>グラフィックなしで色×素材だけで会話させる設計。",
-   imgs:[["andersson_01.jpg","SS26 Soft Clash 1"],["andersson_02.jpg","SS26 Soft Clash 2"],["andersson_03.jpg","SS26 Soft Clash 3"],["andersson_04.jpg","SS26 Soft Clash 4"],["andersson_05.jpg","SS26 Soft Clash 5"]]},
+   imgs:["andersson_01.jpg","andersson_02.jpg","andersson_03.jpg","andersson_04.jpg","andersson_05.jpg","andersson_06.jpg","andersson_07.jpg","andersson_08.jpg","andersson_09.jpg"]},
 
-  {r:"kr", region:"kr", name:"MARDI MERCREDI", kana:"マルディ・メクルディ", flag:"🇰🇷", meta:"韓国 / 2018 / Park & Lee",
+  {region:"kr", name:"MARDI MERCREDI", kana:"マルディ・メクルディ", flag:"🇰🇷", meta:"韓国 / 2018 / Park & Lee", season:"Collection",
    concept:"ソウル×フランスの軽やかさ — フラワーロゴ核のカラフルユニセックス",
    match:[2,4], official:"global.mardimercredi.com / @mardimercredi",
    point:"<b>「2色カラーペアリング」の方法論。</b>デザインがシンプルでも色の組み合わせだけで個性を出す。",
-   imgs:[["mardi_01.jpg","bleu × orange"],["mardi_02.jpg","jaune × marron"],["mardi_03.jpg","violet × vert"],["mardi_04.jpg","hiver ペアルック"],["mardi_05.jpg","MONSIEUR ET MADEMOISELLE"]]},
+   imgs:["mardi_01.jpg","mardi_02.jpg","mardi_03.jpg","mardi_04.jpg","mardi_05.jpg","mardi_06.jpg","mardi_07.jpg","mardi_08.jpg","mardi_09.jpg"]},
 
-  {r:"kr", region:"kr", name:"MATIN KIM", kana:"マタンキム", flag:"🇰🇷", meta:"韓国 / 2018 / Kim Matin",
+  {region:"kr", name:"MATIN KIM", kana:"マタンキム", flag:"🇰🇷", meta:"韓国 / 2018 / Kim Matin", season:"Collection",
    concept:"Matin（朝）— 日常×トレンド×着心地のコンテンポラリーストリート",
    match:[2,4], official:"matinkim.shop / @matinkim_magazine",
    point:"<b>素材の「触感の違い」</b>（フェイクレザー×キルティング×ウォッシュドデニム）で同ラインの中に変化をつける。",
-   imgs:[["matinkim_01.jpg","Faux Leather JK"],["matinkim_02.jpg","Quilted Leather"],["matinkim_03.jpg","Racer Charcoal"],["matinkim_04.jpg","Denim Trucker"],["matinkim_05.jpg","26SS NEW LANGUAGE"]]},
+   imgs:["matinkim_01.jpg","matinkim_02.jpg","matinkim_03.jpg","matinkim_04.jpg","matinkim_05.jpg","matinkim_06.jpg","matinkim_07.jpg"]},
 
-  {r:"kr", region:"kr", name:"AMOMENTO", kana:"アモメント", flag:"🇰🇷", meta:"韓国 / 2016 / Lee Mee-Kung",
-   concept:"Yangjangjeom（仕立て屋・FW26）— ミニマル×テクスチャー・引き算の色",
+  {region:"kr", name:"AMOMENTO", kana:"アモメント", flag:"🇰🇷", meta:"韓国 / 2016 / Lee Mee-Kung", season:"FW26",
+   concept:"Yangjangjeom（仕立て屋）— ミニマル×テクスチャー・引き算の色",
    match:[1,2,3,4], official:"amomento.us / @amomento.co",
    point:"<b>仕立て的な切替・ダーツ・縫い代の見せ方を前面に。</b>①切り返し条件の最上位参考。",
-   imgs:[["amomento_01.jpg","FW26 上海 Look 1"],["amomento_02.jpg","FW26 上海 Look 2"],["amomento_03.jpg","FW26 上海 Look 3"],["amomento_04.jpg","FW26 上海 Look 4"]]},
+   imgs:["amomento_01.jpg","amomento_02.jpg","amomento_03.jpg","amomento_04.jpg","amomento_05.jpg","amomento_06.jpg","amomento_07.jpg","amomento_08.jpg"]},
+
+  {region:"kr", name:"POST ARCHIVE FACTION", kana:"ポストアーカイブファクション / PAF", flag:"🇰🇷", meta:"韓国 / 2017 / Dongjoon Lim", season:"FW26",
+   concept:"anatomy of clothing（服の解剖学）— 構造を解体・再接続するモジュラーデザイン",
+   match:[1,3,4], official:"postarchivefaction.com / @postarchivefaction",
+   point:"<b>縫い目の位置を1〜2箇所ずらすだけで別の服に見える手法。</b>＝Armillary. の生産コスト内で実現しやすい切り返しの最有力参考。",
+   imgs:["paf_01.jpg","paf_02.jpg","paf_03.jpg","paf_04.jpg","paf_05.jpg","paf_06.jpg","paf_07.jpg","paf_08.jpg"]},
 
   // ---- EUROPE / GLOBAL ----
-  {r:"eu", region:"eu", name:"LEMAIRE", kana:"ルメール", flag:"🇫🇷", meta:"フランス / 1990 / C. Lemaire & S-L. Tran",
+  {region:"eu", name:"LEMAIRE", kana:"ルメール", flag:"🇫🇷", meta:"フランス / 1990 / C. Lemaire & S-L. Tran", season:"SS26",
    concept:"身体の動きと着心地起点 — 素材/比率/カラーで「着る行為」を讃える",
    match:[1,2,3], official:"lemaire.fr / @lemaire_official",
    point:"<b>「fitted × fluid」のシルエット対比＋夕焼けカラーパレット。</b>素材の光沢×マットのコントラストも26AWで使える。",
-   imgs:[["lemaire_01.jpg","SS26 Look 01"],["lemaire_02.jpg","SS26 Look 05"],["lemaire_03.jpg","SS26 Look 12"],["lemaire_04.jpg","SS26 Look 20"],["lemaire_05.jpg","SS26 Look 33"]]},
+   imgs:["lemaire_01.jpg","lemaire_02.jpg","lemaire_03.jpg","lemaire_04.jpg","lemaire_05.jpg","lemaire_06.jpg","lemaire_07.jpg","lemaire_08.jpg","lemaire_09.jpg"]},
 
-  {r:"eu", region:"eu", name:"OUR LEGACY", kana:"アワー レガシー", flag:"🇸🇪", meta:"スウェーデン / 2005 / Hallin & Nying",
+  {region:"eu", name:"OUR LEGACY", kana:"アワー レガシー", flag:"🇸🇪", meta:"スウェーデン / 2005 / Hallin & Nying", season:"SS26",
    concept:"20年のB面アイデアを蒸留したユニセックス — 既視感シルエットへのサプライズ",
    match:[1,2,3,4], official:"ourlegacy.com / @ourlegacy",
    point:"<b>縫製ラインを意匠として見せる「内側の切替」＋overdyed色使い。</b>26AWのカラーリング参考に直接使える。",
-   imgs:[["ourlegacy_01.jpg","SS26 Look 01"],["ourlegacy_02.jpg","SS26 Look 05"],["ourlegacy_03.jpg","SS26 Look 14"],["ourlegacy_04.jpg","SS26 Look 27"],["ourlegacy_05.jpg","SS26 Look 45"]]},
+   imgs:["ourlegacy_01.jpg","ourlegacy_02.jpg","ourlegacy_03.jpg","ourlegacy_04.jpg","ourlegacy_05.jpg","ourlegacy_06.jpg","ourlegacy_07.jpg"]},
 
-  {r:"eu", region:"eu", name:"Studio Nicholson", kana:"スタジオ ニコルソン", flag:"🇬🇧", meta:"イギリス / 2010s / Nick Wakeman",
+  {region:"eu", name:"Studio Nicholson", kana:"スタジオ ニコルソン", flag:"🇬🇧", meta:"イギリス / 2010s / Nick Wakeman", season:"SS26",
    concept:"「生地が勝手に動く」感覚 — モノトーン基調×ドレープのミニマリズム",
    match:[1,3,4], official:"studionicholson.com / @studio_nicholson",
    point:"<b>「縫い目の美しさ」前面のシームワーク切替＋素材の落ち感で形を作る。</b>「素材で勝負」の方向性と好相性。",
-   imgs:[["studionicholson_01.jpg","SS26 Module 02"],["studionicholson_02.jpg","SS26 Module 04"],["studionicholson_03.jpg","SS26 Module 08"],["studionicholson_04.jpg","SS26 Module 15"],["studionicholson_05.jpg","SS26 Module 22"]]},
+   imgs:["studionicholson_01.jpg","studionicholson_02.jpg","studionicholson_03.jpg","studionicholson_04.jpg","studionicholson_05.jpg","studionicholson_06.jpg","studionicholson_07.jpg","studionicholson_08.jpg","studionicholson_09.jpg"]},
 
-  {r:"eu", region:"eu", name:"AMI Paris", kana:"アミ パリ", flag:"🇫🇷", meta:"フランス / 2011 / Alexandre Mattiussi",
+  {region:"eu", name:"AMI Paris", kana:"アミ パリ", flag:"🇫🇷", meta:"フランス / 2011 / Alexandre Mattiussi", season:"SS26",
    concept:"パリジャンが本当に着たい服 — テーラリング×カジュアル境界消し",
    match:[2,3,4], official:"amiparis.com / @amiparis",
    point:"<b>セージ×イエロー×ラベンダーの3色組み合わせ＝26AWカラープランの起点。</b>テーラードをカジュアルに崩すフォルム感も◎。",
-   imgs:[["ami_01.jpg","SS26 Keylook 02"],["ami_02.jpg","SS26 Keylook 03"],["ami_03.jpg","SS26 Keylook 05"],["ami_04.jpg","SS26 Keylook 06"],["ami_05.jpg","SS26 Keylook 09"]]},
+   imgs:["ami_01.jpg","ami_02.jpg","ami_03.jpg","ami_04.jpg","ami_05.jpg","ami_06.jpg","ami_07.jpg","ami_08.jpg","ami_09.jpg"]},
+
+  {region:"eu", name:"Wales Bonner", kana:"ウェールズ・ボナー", flag:"🇬🇧", meta:"イギリス / 2014 / Grace Wales Bonner", season:"FW26",
+   concept:"サヴィル・ロウのテーラリング × カリブ・アフリカン文化の融合",
+   match:[2,3,4], official:"walesbonner.net / @walesbonner",
+   point:"<b>テラコッタ×クリーム×スポーツ素材の「色と素材の組み合わせ」が直接参照できる。</b>adidas/Y-3コラボの綺麗め×スポーツのバランスも◎。",
+   imgs:["wb_01.jpg","wb_02.jpg","wb_03.jpg","wb_04.jpg","wb_05.jpg","wb_06.jpg","wb_07.jpg","wb_08.jpg"]},
 ];
 
 const REGIONS = [
@@ -317,21 +314,17 @@ const REGIONS = [
 ];
 
 const board = document.getElementById("board");
-let lastRegion = "";
 REGIONS.forEach(reg=>{
   const div = document.createElement("div");
-  div.className = "region-divider";
-  div.id = reg.id;
-  div.setAttribute("data-r", reg.id);
+  div.className = "region-divider"; div.id = reg.id; div.setAttribute("data-r", reg.id);
   div.innerHTML = `<div class="rl serif">${reg.rl}</div><h2 class="serif">${reg.h}</h2>`;
   board.appendChild(div);
 
   BRANDS.filter(b=>b.region===reg.id).forEach(b=>{
     const sec = document.createElement("section");
-    sec.className = "brand";
-    sec.setAttribute("data-r", b.r);
+    sec.className = "brand"; sec.setAttribute("data-r", b.region);
     const badges = b.match.map(m=>`<span class="badge"><span class="bi">${C[m].i}</span>${C[m].t}</span>`).join("");
-    const shots = b.imgs.map(([f,cap])=>`<figure class="shot"><img src="./images/${f}" alt="${b.name} — ${cap}" onerror="this.style.opacity=.25;this.alt='画像読込不可';"><figcaption>${cap}</figcaption></figure>`).join("");
+    const shots = b.imgs.map((f,i)=>`<figure class="shot"><img loading="lazy" src="./images/${f}" alt="${b.name} ${b.season} #${i+1}" onerror="this.style.opacity=.2;this.alt='—';"><figcaption>${b.season} #${i+1}</figcaption></figure>`).join("");
     sec.innerHTML = `
       <div class="brand-head">
         <div class="bh-l">
@@ -348,7 +341,6 @@ REGIONS.forEach(reg=>{
   });
 });
 
-// LIGHTBOX
 const lb = document.getElementById("lb");
 const lbImg = lb.querySelector("img");
 const lbCap = lb.querySelector(".lb-cap");
