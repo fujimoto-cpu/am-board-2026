@@ -50,7 +50,7 @@
   .matrix td.kr{border-top:3px solid var(--kr);}
   .matrix td.eu{border-top:3px solid var(--eu);}
   .matrix .rowh .ci{font-size:18px; margin-right:6px;}
-  .addbrands{margin-top:16px; background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:14px 18px; font-size:13px; color:#45413a;}
+  .addbrands{margin-top:16px; background:var(--card); border:1px dashed var(--line); border-radius:12px; padding:14px 18px; font-size:13px; color:#45413a; line-height:1.9;}
   .addbrands b{color:var(--ink);}
 
   .nav{position:sticky; top:0; z-index:40; background:rgba(246,244,240,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:12px 0;}
@@ -123,8 +123,8 @@
   <div class="season serif">26AW</div>
   <p class="lead">川田くん 5/13 打ち合わせ起点 —「ヒロさん 24AW 頃の<b>綺麗め路線</b> × <b>韓国系トレンド融合</b>」。グラフィック頼みではなく<b>「形・素材・切り返し・カラーリング」</b>で勝負するための参考ブランド集。</p>
   <div class="stats">
-    <div><div class="n serif">17</div><div class="l">Brands</div></div>
-    <div><div class="n serif">140</div><div class="l">References</div></div>
+    <div><div class="n serif">20</div><div class="l">Brands</div></div>
+    <div><div class="n serif">147</div><div class="l">References</div></div>
     <div><div class="n serif">4</div><div class="l">Conditions</div></div>
     <div><div class="n serif">3</div><div class="l">Regions</div></div>
   </div>
@@ -174,14 +174,17 @@
       </tr>
     </tbody>
   </table>
-  <div class="addbrands">＋ ユニセックス強化の追加3ブランド：<b>beautiful people</b>🇯🇵（変形ギミック）／<b>POST ARCHIVE FACTION</b>🇰🇷（モジュラー切り返し）／<b>Wales Bonner</b>🇬🇧（上品な色×素材）。下のギャラリー各地域の最後に掲載。</div>
+  <div class="addbrands">
+    ＋ <b>ユニセックス強化</b>：beautiful people🇯🇵（変形ギミック）／POST ARCHIVE FACTION🇰🇷（モジュラー切り返し）／Wales Bonner🇬🇧（上品な色×素材）<br>
+    ＋ <b>ポップ&カラフル</b>：Sunnei🇮🇹（原色ストライプ）／KIRSH🇰🇷（チェリー・パステル）／Casablanca🇫🇷（高彩度プリント）— 色の幅を出す要員。各地域ギャラリー末尾に掲載。
+  </div>
 </section>
 
 <nav class="nav"><div class="wrap">
   <span class="lab">Jump</span>
   <a href="#jp">🇯🇵 日本 6</a>
-  <a href="#kr">🇰🇷 韓国 6</a>
-  <a href="#eu">🌍 欧州/Global 5</a>
+  <a href="#kr">🇰🇷 韓国 7</a>
+  <a href="#eu">🌍 欧州/Global 7</a>
   <a href="#top" style="margin-left:auto">↑ Top</a>
 </div></nav>
 
@@ -189,8 +192,8 @@
 
 <footer>
   <div class="src">
-    <b>Armillary. 26AW イメージボード</b>（社内検討用・v2 / 17ブランド・140点）<br>
-    作成 2026-05-31 ／ 全画像は各ブランド公式サイト・公式IG・FASHIONSNAP / Hypebeast / WWD 等メディアより参考目的で取得。<br>
+    <b>Armillary. 26AW イメージボード</b>（社内検討用・v3 / 20ブランド・147点）<br>
+    作成 2026-05-31（更新 2026-06-01）／ 全画像は各ブランド公式サイト・公式IG・FASHIONSNAP / Hypebeast / WWD 等メディアより参考目的で取得。<br>
     商用利用・外部配布不可。最終的なデザイン方向の摺り合わせ素材として使用。
   </div>
 </footer>
@@ -273,20 +276,26 @@ const BRANDS = [
    concept:"anatomy of clothing（服の解剖学）— 構造を解体・再接続するモジュラーデザイン",
    match:[1,3,4], official:"postarchivefaction.com / @postarchivefaction",
    point:"<b>縫い目の位置を1〜2箇所ずらすだけで別の服に見える手法。</b>＝Armillary. の生産コスト内で実現しやすい切り返しの最有力参考。",
-   imgs:["paf_01.jpg","paf_02.jpg","paf_03.jpg","paf_04.jpg","paf_05.jpg","paf_06.jpg","paf_07.jpg","paf_08.jpg"]},
+   imgs:["paf_01.jpg","paf_02.jpg","paf_03.jpg","paf_04.jpg","paf_05.jpg","paf_07.jpg","paf_08.jpg"]},
+
+  {region:"kr", name:"KIRSH", kana:"キルシー", flag:"🇰🇷", meta:"韓国 / 2012 / KIRSH", season:"26SS",
+   concept:"チェリーロゴをシグネチャーに、パステル〜ビビッドで魅せるカジュアルユニセックス",
+   match:[2,4], official:"kirsh.co.kr / @kirsh_official",
+   point:"<b>「ポップだけど子供っぽくない」色とロゴのさじ加減。</b>ワンポイントグラフィックをシーズンのカラー展開と連動させる手法が参考になる。",
+   imgs:["kirsh_01.jpg","kirsh_02.jpg","kirsh_03.jpg","kirsh_04.jpg"]},
 
   // ---- EUROPE / GLOBAL ----
   {region:"eu", name:"LEMAIRE", kana:"ルメール", flag:"🇫🇷", meta:"フランス / 1990 / C. Lemaire & S-L. Tran", season:"SS26",
    concept:"身体の動きと着心地起点 — 素材/比率/カラーで「着る行為」を讃える",
    match:[1,2,3], official:"lemaire.fr / @lemaire_official",
    point:"<b>「fitted × fluid」のシルエット対比＋夕焼けカラーパレット。</b>素材の光沢×マットのコントラストも26AWで使える。",
-   imgs:["lemaire_01.jpg","lemaire_02.jpg","lemaire_03.jpg","lemaire_04.jpg","lemaire_05.jpg","lemaire_06.jpg","lemaire_07.jpg","lemaire_08.jpg","lemaire_09.jpg"]},
+   imgs:["lemaire_01.jpg","lemaire_02.jpg","lemaire_03.jpg","lemaire_04.jpg","lemaire_05.jpg"]},
 
   {region:"eu", name:"OUR LEGACY", kana:"アワー レガシー", flag:"🇸🇪", meta:"スウェーデン / 2005 / Hallin & Nying", season:"SS26",
    concept:"20年のB面アイデアを蒸留したユニセックス — 既視感シルエットへのサプライズ",
    match:[1,2,3,4], official:"ourlegacy.com / @ourlegacy",
    point:"<b>縫製ラインを意匠として見せる「内側の切替」＋overdyed色使い。</b>26AWのカラーリング参考に直接使える。",
-   imgs:["ourlegacy_01.jpg","ourlegacy_02.jpg","ourlegacy_03.jpg","ourlegacy_04.jpg","ourlegacy_05.jpg","ourlegacy_06.jpg","ourlegacy_07.jpg"]},
+   imgs:["ourlegacy_01.jpg","ourlegacy_02.jpg","ourlegacy_03.jpg","ourlegacy_04.jpg","ourlegacy_05.jpg"]},
 
   {region:"eu", name:"Studio Nicholson", kana:"スタジオ ニコルソン", flag:"🇬🇧", meta:"イギリス / 2010s / Nick Wakeman", season:"SS26",
    concept:"「生地が勝手に動く」感覚 — モノトーン基調×ドレープのミニマリズム",
@@ -305,6 +314,18 @@ const BRANDS = [
    match:[2,3,4], official:"walesbonner.net / @walesbonner",
    point:"<b>テラコッタ×クリーム×スポーツ素材の「色と素材の組み合わせ」が直接参照できる。</b>adidas/Y-3コラボの綺麗め×スポーツのバランスも◎。",
    imgs:["wb_01.jpg","wb_02.jpg","wb_03.jpg","wb_04.jpg","wb_05.jpg","wb_06.jpg","wb_07.jpg","wb_08.jpg"]},
+
+  {region:"eu", name:"Sunnei", kana:"スンネイ", flag:"🇮🇹", meta:"イタリア / 2014 / Rizzo & Messina", season:"SS25",
+   concept:"MACRO — 原色ストライプ・誇張ボリューム・ユーモアのジェンダーレス",
+   match:[1,2,3,4], official:"sunnei.it / @sunnei",
+   point:"<b>原色の「色を置く場所」とストライプの向き・切替点。</b>赤×黄×白のポップな3色使いは今のボードに欠けてた要素。",
+   imgs:["sunnei_02.jpg","sunnei_03.jpg","sunnei_04.jpg","sunnei_05.jpg","sunnei_06.jpg"]},
+
+  {region:"eu", name:"Casablanca", kana:"カサブランカ", flag:"🇫🇷", meta:"フランス / 2018 / Charaf Tajer", season:"SS25",
+   concept:"シルクプリント・テニス・リゾート — 図像学的グラフィック×ビビッド配色",
+   match:[1,2,3,4], official:"casablancaparis.com / @casablanca",
+   point:"<b>「高彩度なのに品が落ちない」設計。</b>グラフィックの密度と生地の上品さのバランスが、Armillary.のプリント企画で参照できる。",
+   imgs:["casablanca_01.jpg","casablanca_02.jpg","casablanca_03.jpg","casablanca_04.jpg","casablanca_06.jpg"]},
 ];
 
 const REGIONS = [
